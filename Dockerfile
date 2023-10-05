@@ -18,7 +18,7 @@
 
 ##CMD [ "node", "server.js" ]
 
-FROM node:current-alpine
+FROM --platform=linux/amd64 node:current-alpine
 COPY . /app
 WORKDIR /app
 RUN npm install
